@@ -6,9 +6,22 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "generate-audio": "tsx scripts/generate-audio.ts",
+    "generate-audio:force": "tsx scripts/generate-audio.ts --force",
+    "generate-audio:scene": "tsx scripts/generate-audio.ts --scene=",
+    "generate-images": "tsx scripts/generate-images.ts",
+    "generate-images:force": "tsx scripts/generate-images.ts --force",
+    "generate-images:scene": "tsx scripts/generate-images.ts --scene=",
+    "copy-english": "cat lib/scenes/act*.ts | grep -A 200 'english:' | grep -v 'urdu:\\|punjabi:\\|danish:\\|textLines\\|id:\\|title:\\|visualStyle:\\|backgroundImage:\\|textOverlay:\\|timePeriod:\\|voiceId:' | sed 's/english: \"//' | sed 's/\",$//' | sed 's/^[[:space:]]*//' | grep -v '^}$\\|^{$\\|^--$' | pbcopy && echo '✅ All English audio scripts copied to clipboard!'"
   },
   "dependencies": {
+    "@ai-sdk/openai": "^3.0.2",
+    "@gsap/react": "^2.1.2",
+    "ai": "^6.0.6",
+    "axios": "^1.13.2",
+    "framer-motion": "^12.23.26",
+    "gsap": "^3.14.2",
     "next": "16.1.1",
     "react": "19.2.3",
     "react-dom": "19.2.3"
@@ -18,9 +31,11 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "dotenv": "^17.2.3",
     "eslint": "^9",
     "eslint-config-next": "16.1.1",
     "tailwindcss": "^4",
+    "tsx": "^4.21.0",
     "typescript": "^5"
   }
 }

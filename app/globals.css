@@ -24,3 +24,220 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Full-screen narrative layout */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll; /* Force scrollbar to always show */
+  scroll-behavior: smooth;
+}
+
+/* Scroll-based narrative container */
+.narrative-container {
+  position: relative;
+  width: 100%;
+}
+
+/* Individual scene sections */
+.scene-section {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  /* Removed scroll-snap-align for smooth continuous scrolling */
+}
+
+/* Urdu font class */
+.font-urdu {
+  font-family: var(--font-urdu), serif;
+  direction: rtl;
+}
+
+/* Prevent text selection during narrative */
+.no-select {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+/* Screen reader only (visually hidden but accessible) */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* Custom audio seek bar styling */
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+/* Range track */
+input[type="range"]::-webkit-slider-runnable-track {
+  height: 8px;
+  border-radius: 9999px;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.5) 0%,
+    rgba(255, 255, 255, 0.5) var(--progress, 0%),
+    rgba(255, 255, 255, 0.1) var(--progress, 0%),
+    rgba(255, 255, 255, 0.1) 100%
+  );
+}
+
+input[type="range"]::-moz-range-track {
+  height: 8px;
+  border-radius: 9999px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+input[type="range"]::-moz-range-progress {
+  height: 8px;
+  border-radius: 9999px;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+/* Range thumb */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: white;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: white;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+input[type="range"]:hover::-webkit-slider-thumb {
+  transform: scale(1.2);
+}
+
+input[type="range"]:hover::-moz-range-thumb {
+  transform: scale(1.2);
+}
+
+/* Focus visible (keyboard navigation) */
+input[type="range"]:focus-visible {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}
+
+/* Smooth scrollbar for timestamp mapper */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* ============================================
+   DOCUMENTARY AESTHETIC
+   "Netflix Documentary" / "Evidence" Style
+   ============================================ */
+
+/* Scene background images - documentary treatment */
+.scene-section img,
+.scene-section [style*="background-image"] {
+  /* Desaturate slightly to remove weird AI color shifts */
+  filter: saturate(0.85) contrast(1.15) brightness(0.95);
+
+  /* Subtle vignette to focus the eye */
+  mask-image: radial-gradient(ellipse 80% 80% at center, black 40%, transparent 100%);
+  -webkit-mask-image: radial-gradient(ellipse 80% 80% at center, black 40%, transparent 100%);
+}
+
+/* Film grain overlay - unifies all AI images */
+.scene-section::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 100;
+  opacity: 0.15;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+  mix-blend-mode: overlay;
+  animation: grain 8s steps(10) infinite;
+}
+
+@keyframes grain {
+  0%, 100% { transform: translate(0, 0); }
+  10% { transform: translate(-5%, -10%); }
+  20% { transform: translate(-15%, 5%); }
+  30% { transform: translate(7%, -25%); }
+  40% { transform: translate(-5%, 25%); }
+  50% { transform: translate(-15%, 10%); }
+  60% { transform: translate(15%, 0%); }
+  70% { transform: translate(0%, 15%); }
+  80% { transform: translate(3%, 35%); }
+  90% { transform: translate(-10%, 10%); }
+}
+
+/* Monospace font for data/evidence - the "developer/coder" identity */
+.data-text,
+.mono {
+  font-family: 'Roboto Mono', 'Courier New', monospace;
+  font-feature-settings: 'tnum' 1; /* Tabular numbers */
+  letter-spacing: -0.02em;
+}
+
+/* Kinetic typography - words fade in one by one */
+.kinetic-text {
+  display: inline-block;
+  opacity: 0;
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Evidence aesthetic - for numbers, data points */
+.evidence {
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 500;
+  color: #fff;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+  letter-spacing: 0.05em;
+}
+
+/* Memory/flashback treatment */
+.memory-mode {
+  filter: saturate(0.6) contrast(1.2) sepia(0.2);
+  mix-blend-mode: luminosity;
+}

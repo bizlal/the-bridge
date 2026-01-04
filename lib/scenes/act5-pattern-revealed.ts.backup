@@ -1,0 +1,410 @@
+import { SceneData } from '../types';
+
+/**
+ * ACT 5: THE PATTERN REVEALED (Scenes 28-34)
+ * TODO: REWRITE with the PATTERN truth:
+ * - Living at home = gambling active (Summer 2015, 2021-present)
+ * - Living independently = NO gambling (2015-2017 broke, 2017-2021 Trackem)
+ * - April 2021 firing, moved back home, gambling returns immediately
+ * - Environment determines outcome, not moral failure
+ */
+
+export const act5Scenes: SceneData[] = [
+  {
+    id: 28,
+    title: "ONE DAY AT A TIME",
+    audioScripts: {
+      urdu: "[calm] میں نے سیکھا: ایک دن۔ ایک وقت میں۔ [thoughtful] میں نے gamble نہیں کیا۔ ایک دن۔ پھر دو۔ پھر ایک ہفتہ۔ [proud] پھر ایک مہینہ۔ [hopeful] اور ہر دن، یہ تھوڑا آسان ہو گیا۔ [gentle] تھوڑا۔",
+
+      english: "[calm] I learned: One day. At a time. [thoughtful] I didn't gamble. One day. Then two. Then a week. [proud] Then a month. [hopeful] And every day, it got a little easier. [gentle] A little.",
+
+      punjabi: "[calm] ਮੈਂ ਸਿੱਖਿਆ: ਇੱਕ ਦਿਨ। ਇੱਕ ਵਾਰ ਵਿੱਚ। [thoughtful] ਮੈਂ gamble ਨਹੀਂ ਕੀਤਾ। ਇੱਕ ਦਿਨ। ਫਿਰ ਦੋ। ਫਿਰ ਇੱਕ ਹਫ਼ਤਾ। [proud] ਫਿਰ ਇੱਕ ਮਹੀਨਾ। [hopeful] ਅਤੇ ਹਰ ਦਿਨ, ਇਹ ਥੋੜ੍ਹਾ ਆਸਾਨ ਹੋ ਗਿਆ। [gentle] ਥੋੜ੍ਹਾ।",
+
+      danish: "[calm] Jeg lærte: Én dag. Ad gangen. [thoughtful] Jeg spillede ikke. Én dag. Så to. Så en uge. [proud] Så en måned. [hopeful] Og hver dag blev det lidt lettere. [gentle] Lidt."
+    },
+    textLines: [
+      {
+        urdu: "ایک دن۔ ایک وقت میں۔",
+        english: "One day. At a time.",
+        punjabi: "ਇੱਕ ਦਿਨ। ਇੱਕ ਵਾਰ ਵਿੱਚ।",
+        danish: "Én dag. Ad gangen."
+      },
+      {
+        urdu: "ایک دن gamble نہیں کیا۔",
+        english: "Didn't gamble one day.",
+        punjabi: "ਇੱਕ ਦਿਨ gamble ਨਹੀਂ ਕੀਤਾ।",
+        danish: "Spillede ikke én dag.",
+        delay: 400
+      },
+      {
+        urdu: "پھر ایک ہفتہ۔ ایک مہینہ۔",
+        english: "Then a week. A month.",
+        punjabi: "ਫਿਰ ਇੱਕ ਹਫ਼ਤਾ। ਇੱਕ ਮਹੀਨਾ।",
+        danish: "Så en uge. En måned.",
+        delay: 800
+      },
+      {
+        urdu: "ہر دن آسان ہوتا گیا۔",
+        english: "Every day got easier.",
+        punjabi: "ਹਰ ਦਿਨ ਆਸਾਨ ਹੋਇਆ।",
+        danish: "Hver dag blev lettere.",
+        delay: 1200
+      },
+    ],
+    visualStyle: 'bright',
+    backgroundImage: '/images/scene-28-one-day-at-a-time.jpg',
+    textOverlay: 'DAY BY DAY',
+    timePeriod: 'FALL 2017'
+  },
+
+  // Scene 29: FINDING PURPOSE,
+
+  {
+    id: 29,
+    title: "FINDING PURPOSE",
+    audioScripts: {
+      urdu: "[thoughtful] میں نے programming میں مہارت حاصل کرنی شروع کی۔ [determined] واقعی۔ صرف ڈگریاں حاصل کرنے کے لیے نہیں۔ [proud] میں نے چیزیں بنائیں۔ اصلی چیزیں۔ [hopeful] میں نے محسوس کیا... میں اچھا ہو سکتا ہوں۔ اس میں۔ [excited] میرے پاس ایک مقصد ہو سکتا ہے۔",
+
+      english: "[thoughtful] I started getting good at programming. [determined] Really good. Not just for degrees. [proud] I built things. Real things. [hopeful] I felt... I could be good. At this. [excited] I could have a purpose.",
+
+      punjabi: "[thoughtful] ਮੈਂ programming ਵਿੱਚ ਚੰਗਾ ਹੋਣਾ ਸ਼ੁਰੂ ਕੀਤਾ। [determined] ਸੱਚਮੁੱਚ ਚੰਗਾ। ਸਿਰਫ਼ degrees ਲਈ ਨਹੀਂ। [proud] ਮੈਂ ਚੀਜ਼ਾਂ ਬਣਾਈਆਂ। ਅਸਲੀ ਚੀਜ਼ਾਂ। [hopeful] ਮੈਂ ਮਹਿਸੂਸ ਕੀਤਾ... ਮੈਂ ਚੰਗਾ ਹੋ ਸਕਦਾ ਹਾਂ। ਇਸ ਵਿੱਚ। [excited] ਮੇਰਾ ਇੱਕ ਮਕਸਦ ਹੋ ਸਕਦਾ ਹੈ।",
+
+      danish: "[thoughtful] Jeg begyndte at blive god til programmering. [determined] Virkelig god. Ikke bare for grader. [proud] Jeg byggede ting. Rigtige ting. [hopeful] Jeg følte... jeg kunne være god. Til det her. [excited] Jeg kunne have et formål."
+    },
+    textLines: [
+      {
+        urdu: "Programming میں مہارت",
+        english: "Getting good at programming",
+        punjabi: "Programming ਵਿੱਚ ਮਾਹਰ",
+        danish: "Blev god til programmering"
+      },
+      {
+        urdu: "اصلی چیزیں بنائیں۔",
+        english: "Built real things.",
+        punjabi: "ਅਸਲੀ ਚੀਜ਼ਾਂ ਬਣਾਈਆਂ।",
+        danish: "Byggede rigtige ting.",
+        delay: 400
+      },
+      {
+        urdu: "میں اچھا ہو سکتا ہوں۔",
+        english: "I could be good.",
+        punjabi: "ਮੈਂ ਚੰਗਾ ਹੋ ਸਕਦਾ ਹਾਂ।",
+        danish: "Jeg kunne være god.",
+        delay: 800
+      },
+      {
+        urdu: "ایک مقصد۔",
+        english: "A purpose.",
+        punjabi: "ਇੱਕ ਮਕਸਦ।",
+        danish: "Et formål.",
+        delay: 1200
+      },
+    ],
+    visualStyle: 'bright',
+    backgroundImage: '/images/scene-29-finding-purpose.jpg',
+    textOverlay: 'PURPOSE',
+    timePeriod: 'WINTER 2018'
+  },
+
+  // Scene 30: GRADUATION,
+
+  {
+    id: 30,
+    title: "GRADUATION",
+    audioScripts: {
+      urdu: "[proud] Spring ٢٠١٨۔ میں نے graduate کیا۔ [emotional] آپ وہاں تھے۔ [grateful] میں نے سوچا کتنی بار میں نے یہ خراب کیا۔ [hopeful] لیکن میں نے کیا۔ میں نے واقعی کیا۔ [tearful] اور آپ مجھ پر فخر تھے۔",
+
+      english: "[proud] Spring two thousand eighteen. I graduated. [emotional] You were there. [grateful] I thought about how many times I messed up. [hopeful] But I did it. I really did it. [tearful] And you were proud of me.",
+
+      punjabi: "[proud] Spring ੨੦੧੮। ਮੈਂ graduate ਕੀਤਾ। [emotional] ਤੁਸੀਂ ਉੱਥੇ ਸੀ। [grateful] ਮੈਂ ਸੋਚਿਆ ਕਿੰਨੀ ਵਾਰ ਮੈਂ ਇਹ ਖਰਾਬ ਕੀਤਾ। [hopeful] ਪਰ ਮੈਂ ਕੀਤਾ। ਮੈਂ ਸੱਚਮੁੱਚ ਕੀਤਾ। [tearful] ਅਤੇ ਤੁਸੀਂ ਮੇਰੇ ਤੇ ਮਾਣ ਸੀ।",
+
+      danish: "[proud] Forår to tusind og atten. Jeg dimitterede. [emotional] Du var der. [grateful] Jeg tænkte på hvor mange gange jeg har ødelagt det. [hopeful] Men jeg gjorde det. Jeg gjorde det virkelig. [tearful] Og du var stolt af mig."
+    },
+    textLines: [
+      {
+        urdu: "Spring ٢٠١٨: Graduation",
+        english: "Spring 2018: Graduation",
+        punjabi: "Spring ੨੦੧੮: Graduation",
+        danish: "Forår 2018: Dimission"
+      },
+      {
+        urdu: "آپ وہاں تھے۔",
+        english: "You were there.",
+        punjabi: "ਤੁਸੀਂ ਉੱਥੇ ਸੀ।",
+        danish: "Du var der.",
+        delay: 400
+      },
+      {
+        urdu: "میں نے کر دکھایا۔",
+        english: "I did it.",
+        punjabi: "ਮੈਂ ਕੀਤਾ।",
+        danish: "Jeg gjorde det.",
+        delay: 800
+      },
+      {
+        urdu: "آپ فخر تھے۔",
+        english: "You were proud.",
+        punjabi: "ਤੁਸੀਂ ਮਾਣ ਸੀ।",
+        danish: "Du var stolt.",
+        delay: 1200
+      },
+    ],
+    visualStyle: 'bright',
+    backgroundImage: '/images/scene-30-graduation.jpg',
+    textOverlay: 'GRADUATION',
+    timePeriod: 'SPRING 2018'
+  },
+
+  // Scene 31: FIRST JOB,
+
+  {
+    id: 31,
+    title: "FIRST JOB",
+    audioScripts: {
+      urdu: "[excited] مجھے job مل گئی۔ [proud] ایک اصلی software engineer کی job۔ San Francisco میں۔ [nervous] میں نے سوچا... کیا میں یہ کر سکتا ہوں؟ [hopeful] کیا میں اس کے قابل ہوں؟ [determined] میں نے ہاں کہا۔ [grateful] اور میں چلا گیا۔",
+
+      english: "[excited] I got a job. [proud] A real software engineer job. In San Francisco. [nervous] I thought... can I do this? [hopeful] Do I deserve this? [determined] I said yes. [grateful] And I went.",
+
+      punjabi: "[excited] ਮੈਨੂੰ job ਮਿਲ ਗਈ। [proud] ਇੱਕ ਅਸਲੀ software engineer ਦੀ job। San Francisco ਵਿੱਚ। [nervous] ਮੈਂ ਸੋਚਿਆ... ਕੀ ਮੈਂ ਇਹ ਕਰ ਸਕਦਾ ਹਾਂ? [hopeful] ਕੀ ਮੈਂ ਇਸ ਦੇ ਕਾਬਲ ਹਾਂ? [determined] ਮੈਂ ਹਾਂ ਕਿਹਾ। [grateful] ਅਤੇ ਮੈਂ ਚਲਾ ਗਿਆ।",
+
+      danish: "[excited] Jeg fik et job. [proud] Et rigtigt softwareingeniørjob. I San Francisco. [nervous] Jeg tænkte... kan jeg gøre det her? [hopeful] Fortjener jeg det her? [determined] Jeg sagde ja. [grateful] Og jeg tog afsted."
+    },
+    textLines: [
+      {
+        urdu: "پہلی job مل گئی",
+        english: "Got first job",
+        punjabi: "ਪਹਿਲੀ job ਮਿਲੀ",
+        danish: "Fik første job"
+      },
+      {
+        urdu: "San Francisco میں software engineer",
+        english: "Software engineer in San Francisco",
+        punjabi: "San Francisco ਵਿੱਚ software engineer",
+        danish: "Softwareingeniør i San Francisco",
+        delay: 400
+      },
+      {
+        urdu: "کیا میں قابل ہوں؟",
+        english: "Do I deserve this?",
+        punjabi: "ਕੀ ਮੈਂ ਕਾਬਲ ਹਾਂ?",
+        danish: "Fortjener jeg det?",
+        delay: 800
+      },
+      {
+        urdu: "ہاں۔ آپ ہیں۔",
+        english: "Yes. You do.",
+        punjabi: "ਹਾਂ। ਤੁਸੀਂ ਹੋ।",
+        danish: "Ja. Det gør du.",
+        delay: 1200
+      },
+    ],
+    visualStyle: 'bright',
+    backgroundImage: '/images/scene-31-first-job.jpg',
+    textOverlay: 'NEW BEGINNING',
+    timePeriod: 'SUMMER 2018'
+  },
+
+  // Scene 32: STILL FIGHTING,
+
+  {
+    id: 32,
+    title: "STILL FIGHTING",
+    audioScripts: {
+      urdu: "[honest] لیکن یہ ختم نہیں ہوا۔ addiction۔ [vulnerable] ہر دن، میں لڑتا ہوں۔ [thoughtful] کچھ دن آسان ہوتے ہیں۔ کچھ دن... [struggling] کچھ دن بہت مشکل۔ [determined] لیکن میں لڑتا رہتا ہوں۔ [hopeful] کیونکہ میں جانتا ہوں... میں اکیلا نہیں ہوں۔",
+
+      english: "[honest] But it didn't end. The addiction. [vulnerable] Every day, I fight. [thoughtful] Some days are easy. Some days... [struggling] some days are very hard. [determined] But I keep fighting. [hopeful] Because I know... I'm not alone.",
+
+      punjabi: "[honest] ਪਰ ਇਹ ਖ਼ਤਮ ਨਹੀਂ ਹੋਇਆ। addiction। [vulnerable] ਹਰ ਦਿਨ, ਮੈਂ ਲੜਦਾ ਹਾਂ। [thoughtful] ਕੁਝ ਦਿਨ ਆਸਾਨ ਹੁੰਦੇ ਹਨ। ਕੁਝ ਦਿਨ... [struggling] ਕੁਝ ਦਿਨ ਬਹੁਤ ਮੁਸ਼ਕਿਲ। [determined] ਪਰ ਮੈਂ ਲੜਦਾ ਰਹਿੰਦਾ ਹਾਂ। [hopeful] ਕਿਉਂਕਿ ਮੈਂ ਜਾਣਦਾ ਹਾਂ... ਮੈਂ ਇਕੱਲਾ ਨਹੀਂ ਹਾਂ।",
+
+      danish: "[honest] Men det sluttede ikke. Afhængigheden. [vulnerable] Hver dag kæmper jeg. [thoughtful] Nogle dage er lette. Nogle dage... [struggling] nogle dage er meget svære. [determined] Men jeg bliver ved med at kæmpe. [hopeful] Fordi jeg ved... jeg er ikke alene."
+    },
+    textLines: [
+      {
+        urdu: "Addiction ختم نہیں ہوئی۔",
+        english: "Addiction didn't end.",
+        punjabi: "Addiction ਖ਼ਤਮ ਨਹੀਂ ਹੋਈ।",
+        danish: "Afhængigheden sluttede ikke."
+      },
+      {
+        urdu: "ہر دن لڑتا ہوں۔",
+        english: "Fight every day.",
+        punjabi: "ਹਰ ਦਿਨ ਲੜਦਾ ਹਾਂ।",
+        danish: "Kæmper hver dag.",
+        delay: 400
+      },
+      {
+        urdu: "کچھ دن مشکل۔",
+        english: "Some days hard.",
+        punjabi: "ਕੁਝ ਦਿਨ ਮੁਸ਼ਕਿਲ।",
+        danish: "Nogle dage svære.",
+        delay: 800
+      },
+      {
+        urdu: "لیکن میں اکیلا نہیں ہوں۔",
+        english: "But I'm not alone.",
+        punjabi: "ਪਰ ਮੈਂ ਇਕੱਲਾ ਨਹੀਂ ਹਾਂ।",
+        danish: "Men jeg er ikke alene.",
+        delay: 1200
+      },
+    ],
+    visualStyle: 'dramatic',
+    backgroundImage: '/images/scene-32-still-fighting.jpg',
+    textOverlay: 'THE FIGHT CONTINUES',
+    timePeriod: '2018-PRESENT'
+  },
+
+  // Scene 33.5: THE TIRE SHOP
+  {
+    id: 33.5,
+    title: "THE TIRE SHOP",
+    audioScripts: {
+      urdu: "[bitter] ٢٠٢٢ میں، Papa نے ایک ٹائر شاپ خریدی۔ [frustrated] انہوں نے اپنے بیٹے میں invest کرنے کے بجائے ایک ایسی دکان خریدی جہاں کوئی customer نہیں آتا تھا۔ [determined] یہ میری ذمہ داری بن گئی۔ میں نے digital marketing شروع کی۔ Automated ads۔ [bold] میں نے ان کے مشورے کے خلاف budget ١٠٠ dollar روزانہ کر دیا۔ [shocked] اور ہم نے ایک دن میں ١٠ ہزار dollar کمائے۔ [angry] انہوں نے millions میں exit کیا۔ مجھے کیا ملا؟ کچھ نہیں۔ nada۔ [mocking] \"میرا پیسہ تمہارا پیسہ ہے۔\" [sad] جب تک میں اپنے کام کا حصہ نہ مانگوں۔ پھر یہ بدتمیزی ہے۔",
+      english: "[bitter] In 2022, Papa decided to buy a tire shop. [frustrated] Instead of investing in his own son, he bought a shop with no customers. [determined] It became my responsibility. I set up digital marketing. Automated ads. [bold] I went against his advice and raised the budget to a hundred dollars a day. [shocked] And we hit our first ten thousand dollar revenue day. [angry] He made a multi-million dollar exit. What did I get? Nothing. [mocking] \"His money is our money.\" [sad] Until I ask for my share. Then it's disrespectful.",
+      punjabi: "[bitter] ٢٠٢٢ ਵਿੱਚ, Papa ਨੇ ਇੱਕ ਟਾਇਰ ਸ਼ਾਪ ਖਰੀਦੀ। [frustrated] ਉਨ੍ਹਾਂ ਨੇ ਆਪਣੇ ਪੁੱਤਰ ਵਿੱਚ invest ਕਰਨ ਦੀ ਬਜਾਏ ਇੱਕ ਅਜਿਹੀ ਦੁਕਾਨ ਖਰੀਦੀ ਜਿੱਥੇ ਕੋਈ customer ਨਹੀਂ ਆਉਂਦਾ ਸੀ। [determined] ਇਹ ਮੇਰੀ ਜ਼ਿੰਮੇਵਾਰੀ ਬਣ ਗਈ। ਮੈਂ digital marketing ਸ਼ੁਰੂ ਕੀਤੀ। Automated ads। [bold] ਮੈਂ ਉਨ੍ਹਾਂ ਦੀ ਸਲਾਹ ਦੇ ਖਿਲਾਫ budget ١٠٠ dollar ਰੋਜ਼ਾਨਾ ਕਰ ਦਿੱਤਾ। [shocked] ਅਤੇ ਅਸੀਂ ਇੱਕ ਦਿਨ ਵਿੱਚ ١٠ ਹਜ਼ਾਰ dollar ਕਮਾਏ। [angry] ਉਨ੍ਹਾਂ ਨੇ millions ਵਿੱਚ exit ਕੀਤਾ। ਮੈਨੂੰ ਕੀ ਮਿਲਿਆ? ਕੁਝ ਨਹੀਂ। [mocking] \"ਮੇਰਾ ਪੈਸਾ ਤੁਹਾਡਾ ਪੈਸਾ ਹੈ।\" [sad] ਜਦੋਂ ਤੱਕ ਮੈਂ ਆਪਣੇ ਕੰਮ ਦਾ ਹਿੱਸਾ ਨਾ ਮੰਗਾਂ। ਫਿਰ ਇਹ ਬਦਤਮੀਜ਼ੀ ਹੈ।",
+      danish: "[bitter] I 2022 besluttede Papa at købe en dækbutik. [frustrated] I stedet for at investere i sin egen søn, købte han en butik uden kunder. [determined] Det blev mit ansvar. Jeg satte digital markedsføring op. Automatiserede annoncer. [bold] Jeg gik imod hans råd og hævede budgettet til hundrede dollars om dagen. [shocked] Og vi ramte vores første ti tusind dollar omsætningsdag. [angry] Han lavede en exit på flere millioner. Hvad fik jeg? Intet. [mocking] \"Hans penge er vores penge.\" [sad] Indtil jeg beder om min andel. Så er det respektløst."
+    },
+    textLines: [
+      {
+        urdu: "Papa نے ٹائر شاپ خریدی (مجھ میں invest نہیں)",
+        english: "Papa bought Tire Shop (Not invested in me)",
+        punjabi: "Papa ਨੇ Tire Shop ਖਰੀਦੀ (ਮੇਰੇ 'ਚ ਨਹੀਂ)",
+        danish: "Papa købte dækbutik (Ikke i mig)"
+      },
+      {
+        urdu: "Ads Budget: $100/day (مشورے کے خلاف)",
+        english: "Ads Budget: $100/day (Against advice)",
+        punjabi: "Ads Budget: $100/ਦਿਨ (ਸਲਾਹ ਦੇ ਖਿਲਾਫ)",
+        danish: "Annoncebudget: $100/dag (Imod råd)",
+        delay: 400
+      },
+      {
+        urdu: "نتیجہ: $10k/day Revenue",
+        english: "Result: $10k/day Revenue",
+        punjabi: "ਨਤੀਜਾ: $10k/ਦਿਨ Revenue",
+        danish: "Resultat: $10k/dag Omsætning",
+        delay: 800
+      },
+      {
+        urdu: "Multi-million Exit -> مجھے کچھ نہیں ملا",
+        english: "Multi-million Exit -> I got nothing",
+        punjabi: "Multi-million Exit -> ਮੈਨੂੰ ਕੁਝ ਨਹੀਂ ਮਿਲਿਆ",
+        danish: "Multi-million Exit -> Jeg fik intet",
+        delay: 1200
+      },
+      {
+        urdu: "\"میرا پیسہ تمہارا پیسہ ہے\" (جھوٹ)",
+        english: "\"His money is our money\" (Lie)",
+        punjabi: "\"ਮੇਰਾ ਪੈਸਾ ਤੁਹਾਡਾ ਪੈਸਾ ਹੈ\" (ਝੂਠ)",
+        danish: "\"Hans penge er vores penge\" (Løgn)",
+        delay: 1600
+      }
+    ],
+    visualStyle: 'dramatic',
+    backgroundImage: '/images/scene-33.5-tire-shop.jpg',
+    textOverlay: 'UNPAID LABOR',
+    timePeriod: '2022'
+  },
+
+  // Scene 33.6: THE HIDDEN FIRING
+  {
+    id: 33.6,
+    title: "THE HIDDEN FIRING",
+    audioScripts: {
+      urdu: "[triumphant] Late ٢٠٢٢۔ مجھے Lockdocs میں job مل گئی۔ $١٠٠k۔ [bold] میں نے Papa کو کہا: \"دیکھا؟ آپ غلط تھے۔ مجھے ڈگری کی ضرورت نہیں تھی۔\" وہ خاموش رہے۔ [heartbroken] دو مہینے بعد... میری سالگرہ پر، ١٣ نومبر... مجھے نکال دیا گیا۔ [shocked] performance کی وجہ سے نہیں۔ [bitter] بلکہ اس لیے کہ وہ ڈگری کے بغیر government grants حاصل نہیں کر سکتے تھے۔ میری salary afford نہیں کر سکتے تھے۔ [whispers] میں نے انہیں نہیں بتایا۔ میں روز کام پر جانے کا ڈرامہ کرتا رہا۔ [scared] میں ان کو صحیح ثابت کرنے سے بہت ڈرتا تھا۔",
+      english: "[triumphant] Late 2022. I landed a job at Lockdocs. One hundred thousand dollars. [bold] I told Papa: \"See? You were wrong. I didn't need a degree.\" He was quiet. [heartbroken] Two months later... on my birthday, November 13th... I got fired. [shocked] Not for performance. [bitter] But because they couldn't get government grants without a degree. Couldn't afford my salary. [whispers] I didn't tell him. I pretended to go to work every day. [scared] I was too afraid to prove him right.",
+      punjabi: "[triumphant] Late ٢٠٢٢۔ ਮੈਨੂੰ Lockdocs 'ਚ job ਮਿਲ ਗਈ। $١٠٠k। [bold] ਮੈਂ Papa ਨੂੰ ਕਿਹਾ: \"ਦੇਖਿਆ? ਤੁਸੀਂ ਗਲਤ ਸੀ। ਮੈਨੂੰ degree ਦੀ ਲੋੜ ਨਹੀਂ ਸੀ।\" ਉਹ ਚੁੱਪ ਰਹੇ। [heartbroken] ਦੋ ਮਹੀਨੇ ਬਾਅਦ... ਮੇਰੇ birthday 'ਤੇ، ١٣ ਨਵੰਬਰ... ਮੈਨੂੰ ਕੱਢ ਦਿੱਤਾ ਗਿਆ। [shocked] performance ਕਾਰਨ ਨਹੀਂ। [bitter] ਸਗੋਂ ਇਸ ਲਈ ਕਿ ਉਹ degree ਤੋਂ ਬਿਨਾਂ government grants ਨਹੀਂ ਲੈ ਸਕਦੇ ਸੀ। ਮੇਰੀ salary afford ਨਹੀਂ ਕਰ ਸਕਦੇ ਸੀ। [whispers] ਮੈਂ ਉਨ੍ਹਾਂ ਨੂੰ ਨਹੀਂ ਦੱਸਿਆ। ਮੈਂ ਰੋਜ਼ ਕੰਮ 'ਤੇ ਜਾਣ ਦਾ ਡਰਾਮਾ ਕਰਦਾ ਰਿਹਾ। [scared] ਮੈਂ ਉਨ੍ਹਾਂ ਨੂੰ ਸਹੀ ਸਾਬਤ ਕਰਨ ਤੋਂ ਬਹੁਤ ਡਰਦਾ ਸੀ।",
+      danish: "[triumphant] Sent 2022. Jeg fik et job hos Lockdocs. Hundrede tusinde dollars. [bold] Jeg sagde til Papa: \"Se? Du tog fejl. Jeg behøvede ikke en grad.\" Han var stille. [heartbroken] To måneder senere... på min fødselsdag, 13. november... blev jeg fyret. [shocked] Ikke for præstation. [bitter] Men fordi de ikke kunne få statstilskud uden en grad. Havde ikke råd til min løn. [whispers] Jeg fortalte ham det ikke. Jeg lod som om jeg gik på arbejde hver dag. [scared] Jeg var for bange for at give ham ret."
+    },
+    textLines: [
+      {
+        urdu: "Lockdocs: $100k (آپ غلط تھے)",
+        english: "Lockdocs: $100k (You were wrong)",
+        punjabi: "Lockdocs: $100k (ਤੁਸੀਂ ਗਲਤ ਸੀ)",
+        danish: "Lockdocs: $100k (Du tog fejl)"
+      },
+      {
+        urdu: "Nov 23, 2022: سالگرہ پر نکالا گیا",
+        english: "Nov 23, 2022: Fired on Birthday",
+        punjabi: "Nov 23, 2022: ਜਨਮਦਿਨ 'ਤੇ ਕੱਢਿਆ",
+        danish: "23. nov. 2022: Fyret på fødselsdag",
+        delay: 400
+      },
+      {
+        urdu: "وجہ: کوئی ڈگری نہیں = کوئی گرانٹ نہیں",
+        english: "Reason: No Degree = No Grant",
+        punjabi: "ਕਾਰਨ: ਕੋਈ ਡਿਗਰੀ ਨਹੀਂ = ਕੋਈ ਗ੍ਰਾਂਟ ਨਹੀਂ",
+        danish: "Årsag: Ingen grad = Ingen tilskud",
+        delay: 800
+      },
+      {
+        urdu: "میں نے ڈرامہ کیا۔ کام پر جانے کا۔",
+        english: "Pretended to go to work.",
+        punjabi: "ਕੰਮ 'ਤੇ ਜਾਣ ਦਾ ਡਰਾਮਾ ਕੀਤਾ।",
+        danish: "Lod som om jeg arbejdede.",
+        delay: 1200
+      },
+      {
+        urdu: "ڈرتا تھا کہ وہ صحیح ہوں۔",
+        english: "Afraid to prove him right.",
+        punjabi: "ਡਰਦਾ ਸੀ ਕਿ ਉਹ ਸਹੀ ਹੋਣ।",
+        danish: "Bange for at give ham ret.",
+        delay: 1600
+      }
+    ],
+    visualStyle: 'dark',
+    backgroundImage: '/images/scene-33.6-hidden-firing.jpg',
+    textOverlay: 'SECRET SHAME',
+    timePeriod: 'NOV 2022'
+  },
+
+  // Scene 34: WANTING TO TELL YOU,
+
+  {
+    id: 34,
+    title: "WANTING TO TELL YOU",
+    audioScripts: {
+      urdu: "[vulnerable] پابا، میں آپ کو سالوں سے بتانا چاہتا تھا۔ [emotional] لیکن میں ڈرتا تھا۔ [trembling] میں ڈرتا تھا کہ آپ مجھ سے نفرت کریں گے۔ [crying] کہ آپ مجھ پر شرمندہ ہوں گے۔ [hopeful] لیکن... میں نہیں چاہتا کہ ہمارے درمیان یہ جھوٹ رہے۔",
+
+      english: "[vulnerable] Papa, I've wanted to tell you for years. [emotional] But I was scared. [trembling] I was scared you would hate me. [crying] That you would be ashamed of me. [hopeful] But... I don't want this lie between us.",
+
+      punjabi: "[vulnerable] ਪਾਪਾ, ਮੈਂ ਤੁਹਾਨੂੰ ਸਾਲਾਂ ਤੋਂ ਦੱਸਣਾ ਚਾਹੁੰਦਾ ਸੀ। [emotional] ਪਰ ਮੈਂ ਡਰਦਾ ਸੀ। [trembling] ਮੈਂ ਡਰਦਾ ਸੀ ਕਿ ਤੁਸੀਂ ਮੈਨੂੰ ਨਫ਼ਰਤ ਕਰੋਗੇ। [crying] ਕਿ ਤੁਸੀਂ ਮੇਰੇ ਤੇ ਸ਼ਰਮਿੰਦਾ ਹੋਵੋਗੇ। [hopeful] ਪਰ... ਮੈਂ ਨਹੀਂ ਚਾਹੁੰਦਾ ਕਿ ਸਾਡੇ ਵਿਚਕਾਰ ਇਹ ਝੂਠ ਰਹੇ।",
+
+      danish: "[vulnerable] Papa, jeg har villet fortælle dig det i årevis. [emotional] Men jeg var bange. [trembling] Jeg var bange for at du ville hade mig. [crying] At du ville skamme dig over mig. [hopeful] Men... jeg vil ikke have denne løgn mellem os."
+    },
+    textLines: [
+      {
+        urdu: "پابا، میں بتانا چاہتا تھا۔",
+        english: "Papa, I wanted to tell you.",
+        punjabi: "ਪਾਪਾ, ਮੈਂ ਦੱਸਣਾ ਚਾਹੁੰਦਾ ਸੀ।",
+        danish: "Papa, jeg ville fortælle dig det."
+      },
+      {
+        urdu: "لیکن میں ڈرتا تھا۔",
+        english: "But I was scared.",
+        punjabi: "ਪਰ ਮੈਂ ਡਰਦਾ ਸੀ।",
+        danish: "Men jeg var bange.",
+        delay: 400
+      },
+      {
+        urdu: "کہ آپ شرمندہ ہوں گے۔",
+        english: "That you'd be ashamed.",
+        punjabi: "ਕਿ ਤੁਸੀਂ ਸ਼ਰਮਿੰਦਾ ਹੋਵੋਗੇ।",
+        danish: "At du ville skamme dig.",
+        delay: 800
+      },
+      {
+        urdu: "اب جھوٹ نہیں۔",
+        english: "No more lies.",
+        punjabi: "ਹੁਣ ਝੂਠ ਨਹੀਂ।",
+        danish: "Ikke flere løgne.",
+        delay: 1200
+      },
+    ],
+    visualStyle: 'dramatic',
+    backgroundImage: '/images/scene-34-wanting-to-tell-you.jpg',
+    textOverlay: 'THE TRUTH',
+    timePeriod: '2020-2024'
+  },
+
+  // Scene 35: WHAT I LEARNED
+];
