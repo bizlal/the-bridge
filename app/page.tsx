@@ -12,7 +12,9 @@ import AudioPool, { AudioPoolHandle } from '@/components/AudioPool';
 import { AudioSubtitles } from '@/components/AudioSubtitles';
 import { LanguageToggle } from '@/components/LanguageToggle';
 import { LanguageSelector } from '@/components/LanguageSelector';
+import { Toast } from '@/components/Toast';
 import { announceToScreenReader } from '@/lib/utils/announceToScreenReader';
+import { isAudioAvailable, getAvailableLanguageForScene, getLanguageName } from '@/lib/audioAvailability';
 
 export default function NarrativePage() {
   // === HYDRATION STATE ===
@@ -25,6 +27,10 @@ export default function NarrativePage() {
   const { language, setLanguage, cycleLanguage, hasSelected } = useLanguagePreference();
   const { isDarkMode, toggleTheme } = useTheme();
   const reducedMotion = useReducedMotion();
+
+  // === TOAST NOTIFICATIONS ===
+  const [toastMessage, setToastMessage] = useState('');
+  const [showToast, setShowToast] = useState(false);
 
   // === SCROLL-AUDIO SYNC ===
   const { activeSceneId, isPlaying, togglePlayback } = useScrollAudioSync({
@@ -50,6 +56,27 @@ export default function NarrativePage() {
 
     return () => clearInterval(interval);
   }, [audioPoolHandle, activeSceneId, isPlaying]);
+
+  // === AUTO-SWITCH LANGUAGE IF SCENE AUDIO NOT AVAILABLE ===
+  useEffect(() => {
+    if (!hydrated) return;
+
+    // Check if current language has audio for this scene
+    if (!isAudioAvailable(activeSceneId, language)) {
+      const availableLang = getAvailableLanguageForScene(activeSceneId, language);
+
+      if (availableLang !== language) {
+        const currentLangName = getLanguageName(language);
+        const newLangName = getLanguageName(availableLang);
+
+        setLanguage(availableLang);
+        setToastMessage(`Audio not available in ${currentLangName} for this scene. Switched to ${newLangName}.`);
+        setShowToast(true);
+
+        console.log(`🔄 Auto-switched from ${language} to ${availableLang} for scene ${activeSceneId}`);
+      }
+    }
+  }, [activeSceneId, language, hydrated, setLanguage]);
 
   // === SCREEN READER ANNOUNCEMENTS ===
   useEffect(() => {
@@ -126,6 +153,7 @@ export default function NarrativePage() {
         currentLanguage={language}
         onLanguageSelect={setLanguage}
         isVisible={!hasSelected && activeSceneId === 0}
+        currentSceneId={activeSceneId}
       />
 
       {/* Floating Controls */}
@@ -182,6 +210,15 @@ export default function NarrativePage() {
         duration={audioDuration}
         isPlaying={isPlaying}
         language={language}
+      />
+
+      {/* Toast Notifications */}
+      <Toast
+        message={toastMessage}
+        isVisible={showToast}
+        onClose={() => setShowToast(false)}
+        type="warning"
+        duration={5000}
       />
     </main>
   );

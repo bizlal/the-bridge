@@ -12,7 +12,7 @@ import { STORAGE_KEYS } from '@/lib/constants';
 const VALID_LANGUAGES: Language[] = ['ur', 'en', 'pa', 'da'];
 
 export function useLanguagePreference() {
-  const [language, setLanguageState] = useState<Language>('ur'); // Default to Urdu
+  const [language, setLanguageState] = useState<Language>('en'); // Default to English (Urdu audio pending generation)
   const [hasSelected, setHasSelected] = useState(false); // Track if user has selected a language
 
   // Load language preference from localStorage on mount

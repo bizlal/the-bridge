@@ -10,13 +10,13 @@ export const act1Scenes: SceneData[] = [
     id: 0,
     title: "THE ASK",
     audioScripts: {
-      urdu: "[gentle] آپ یہ کہانی اردو، انگریزی، پنجابی، یا ڈینش میں سن سکتے ہیں۔ [thoughtful] اپنی زبان منتخب کریں۔ [PAUSE_FOR_LANGUAGE_SELECTION] [calm] پابا، مجھے آپ کی trust چاہیے۔ [firm] میرا ADHD حقیقی ہے۔ لیکن جب آپ مجھے tools دیتے ہیں، control نہیں... میں succeed کرتا ہوں۔ [frustrated] ہماری problem یہ ہے: جب ہم disagree کرتے ہیں کیسے... تو کچھ نہیں ہوتا۔ [sad] ٢٠٢٠: میں نے condo چاہا، آپ نے house کہا۔ کچھ نہیں ہوا۔ اب: میں credit ٹھیک کرنا چاہتا ہوں، آپ Civic gift دینا چاہتے ہیں۔ [determined] میں gift نہیں چاہتا۔ میں tools چاہتا ہوں۔ Help میری credit ٹھیک کرنے میں through finance جو میں pay کروں۔ Condo downpayment، میں mortgage pay کروں۔ [pleading] مجھے trust کریں میری طرح کرنے کے لیے۔ [gentle] یہ میری کہانی ہے... proof کے لیے کہ میں capable ہوں۔",
+      urdu: "[gentle] آپ یہ کہانی اردو، انگریزی، پنجابی، یا ڈینش میں سن سکتے ہیں۔ [thoughtful] اپنی زبان منتخب کریں۔ [PAUSE_FOR_LANGUAGE_SELECTION] [calm] پابا، مجھے آپ کی trust چاہیے۔ [firm] میرا ADHD حقیقی ہے۔ بغیر کسی شک کے۔ لیکن جب آپ مجھے tools دیتے ہیں، control نہیں... جب environment صحیح ہے... میں succeed کرتا ہوں۔ [frustrated] ہماری problem یہ ہے: جب ہم disagree کرتے ہیں کیسے... تو کچھ نہیں ہوتا۔ [intense] ٢٠٢٠: میں $10,000 ہفتے میں کما رہا تھا۔ میں نے condo چاہا۔ آپ نے house کہا۔ ہم disagree کیے۔ [sad] کچھ نہیں ہوا۔ موقع مر گیا۔ [regretful] ٢٠٢٢ اور ٢٠٢٥: میں نے leases میں غلطیاں کیں۔ لیکن میں نے سیکھا... مجھے equity build کرنی چاہیے۔ [determined] اب: میں credit ٹھیک کرنا چاہتا ہوں، آپ Civic gift دینا چاہتے ہیں۔ میں gift نہیں چاہتا۔ میں tools چاہتا ہوں۔ Finance میری مدد کریں جو میں خود pay کروں۔ Condo downpayment، میں mortgage pay کروں۔ [pleading] مجھے trust کریں میری طرح کرنے کے لیے۔ یا... آئیں understanding تلاش کریں۔ ساتھ میں۔ [gentle] یہ میری کہانی ہے... proof کے لیے کہ میں capable ہوں۔",
 
-      english: "[gentle] You can listen to this story in Urdu, English, Punjabi, or Danish. [thoughtful] Please select your language. [PAUSE_FOR_LANGUAGE_SELECTION] [calm] Papa, I need you to trust me. [firm] My ADHD is real. But when you give me tools, not control... I succeed. [frustrated] Our problem is this: when we disagree on HOW... nothing happens. [sad] Twenty twenty: I wanted a condo, you said house. Nothing happened. Now: I want to rebuild credit, you want to gift me a Civic. [determined] I don't want a gift. I want tools. Help me rebuild credit through financing I pay for. Condo downpayment, I pay mortgage. [pleading] Trust me to do things my way. [gentle] This is my story... to prove I'm capable.",
+      english: "[gentle] You can listen to this story in Urdu, English, Punjabi, or Danish. [thoughtful] Please select your language. [PAUSE_FOR_LANGUAGE_SELECTION] [calm] Papa, I need you to trust me. [firm] My ADHD is real. Without a doubt. But when you give me tools, not control... when the environment is right... I succeed. [frustrated] Our problem is this: when we disagree on HOW... nothing happens. [intense] Twenty twenty: I was making ten thousand dollars a week. I wanted a condo. You said house. We disagreed. [sad] Nothing happened. The opportunity died. [regretful] Twenty twenty-two and twenty twenty-five: I made lease mistakes. But I learned... I need to build equity. [determined] Now: I want to rebuild credit, you want to gift me a Civic. I don't want a gift. I want tools. Help me finance something I pay for myself. Condo downpayment, I pay mortgage. [pleading] Trust me to do things my way. Or... let's find understanding. Together. [gentle] This is my story... to prove I'm capable.",
 
-      punjabi: "[gentle] ਤੁਸੀਂ ਇਹ ਕਹਾਣੀ ਉਰਦੂ, ਅੰਗਰੇਜ਼ੀ, ਪੰਜਾਬੀ, ਜਾਂ ਡੈਨਿਸ਼ ਵਿੱਚ ਸੁਣ ਸਕਦੇ ਹੋ। [thoughtful] ਆਪਣੀ ਭਾਸ਼ਾ ਚੁਣੋ। [PAUSE_FOR_LANGUAGE_SELECTION] [calm] ਪਾਪਾ, ਮੈਨੂੰ ਤੁਹਾਡੀ trust ਚਾਹੀਦੀ ਹੈ। [firm] ਮੇਰਾ ADHD ਅਸਲੀ ਹੈ। ਪਰ ਜਦੋਂ ਤੁਸੀਂ ਮੈਨੂੰ tools ਦਿੰਦੇ ਹੋ, control ਨਹੀਂ... ਮੈਂ succeed ਕਰਦਾ ਹਾਂ। [frustrated] ਸਾਡੀ problem ਇਹ ਹੈ: ਜਦੋਂ ਅਸੀਂ disagree ਕਰਦੇ ਹਾਂ ਕਿਵੇਂ... ਤਾਂ ਕੁਝ ਨਹੀਂ ਹੁੰਦਾ। [sad] ੨੦੨੦: ਮੈਂ condo ਚਾਹਿਆ, ਤੁਸੀਂ house ਕਿਹਾ। ਕੁਝ ਨਹੀਂ ਹੋਇਆ। ਹੁਣ: ਮੈਂ credit ਠੀਕ ਕਰਨੀ ਚਾਹੁੰਦਾ ਹਾਂ, ਤੁਸੀਂ Civic gift ਦੇਣੀ ਚਾਹੁੰਦੇ ਹੋ। [determined] ਮੈਨੂੰ gift ਨਹੀਂ ਚਾਹੀਦੀ। ਮੈਨੂੰ tools ਚਾਹੀਦੇ ਹਨ। Help ਮੇਰੀ credit ਠੀਕ ਕਰਨ 'ਚ through finance ਜੋ ਮੈਂ pay ਕਰਾਂ। Condo downpayment, ਮੈਂ mortgage pay ਕਰਾਂ। [pleading] ਮੈਨੂੰ trust ਕਰੋ ਮੇਰੇ ਤਰੀਕੇ ਨਾਲ ਕਰਨ ਲਈ। [gentle] ਇਹ ਮੇਰੀ ਕਹਾਣੀ ਹੈ... proof ਲਈ ਕਿ ਮੈਂ capable ਹਾਂ।",
+      punjabi: "[gentle] ਤੁਸੀਂ ਇਹ ਕਹਾਣੀ ਉਰਦੂ, ਅੰਗਰੇਜ਼ੀ, ਪੰਜਾਬੀ, ਜਾਂ ਡੈਨਿਸ਼ ਵਿੱਚ ਸੁਣ ਸਕਦੇ ਹੋ। [thoughtful] ਆਪਣੀ ਭਾਸ਼ਾ ਚੁਣੋ। [PAUSE_FOR_LANGUAGE_SELECTION] [calm] ਪਾਪਾ, ਮੈਨੂੰ ਤੁਹਾਡੀ trust ਚਾਹੀਦੀ ਹੈ। [firm] ਮੇਰਾ ADHD ਅਸਲੀ ਹੈ। ਬਿਨਾਂ ਕਿਸੇ ਸ਼ੱਕ ਦੇ। ਪਰ ਜਦੋਂ ਤੁਸੀਂ ਮੈਨੂੰ tools ਦਿੰਦੇ ਹੋ, control ਨਹੀਂ... ਜਦੋਂ environment ਸਹੀ ਹੈ... ਮੈਂ succeed ਕਰਦਾ ਹਾਂ। [frustrated] ਸਾਡੀ problem ਇਹ ਹੈ: ਜਦੋਂ ਅਸੀਂ disagree ਕਰਦੇ ਹਾਂ ਕਿਵੇਂ... ਤਾਂ ਕੁਝ ਨਹੀਂ ਹੁੰਦਾ। [intense] ੨੦੨੦: ਮੈਂ $10,000 ਹਫ਼ਤੇ 'ਚ ਕਮਾ ਰਿਹਾ ਸੀ। ਮੈਂ condo ਚਾਹਿਆ। ਤੁਸੀਂ house ਕਿਹਾ। ਅਸੀਂ disagree ਕੀਤਾ। [sad] ਕੁਝ ਨਹੀਂ ਹੋਇਆ। ਮੌਕਾ ਮਰ ਗਿਆ। [regretful] ੨੦੨੨ ਅਤੇ ੨੦੨੫: ਮੈਂ leases 'ਚ ਗਲਤੀਆਂ ਕੀਤੀਆਂ। ਪਰ ਮੈਂ ਸਿੱਖਿਆ... ਮੈਨੂੰ equity build ਕਰਨੀ ਚਾਹੀਦੀ ਹੈ। [determined] ਹੁਣ: ਮੈਂ credit ਠੀਕ ਕਰਨੀ ਚਾਹੁੰਦਾ ਹਾਂ, ਤੁਸੀਂ Civic gift ਦੇਣੀ ਚਾਹੁੰਦੇ ਹੋ। ਮੈਨੂੰ gift ਨਹੀਂ ਚਾਹੀਦੀ। ਮੈਨੂੰ tools ਚਾਹੀਦੇ ਹਨ। Finance ਮੇਰੀ ਮਦਦ ਕਰੋ ਜੋ ਮੈਂ ਖੁਦ pay ਕਰਾਂ। Condo downpayment, ਮੈਂ mortgage pay ਕਰਾਂ। [pleading] ਮੈਨੂੰ trust ਕਰੋ ਮੇਰੇ ਤਰੀਕੇ ਨਾਲ ਕਰਨ ਲਈ। ਜਾਂ... ਚਲੋ understanding ਲੱਭੀਏ। ਇਕੱਠੇ। [gentle] ਇਹ ਮੇਰੀ ਕਹਾਣੀ ਹੈ... proof ਲਈ ਕਿ ਮੈਂ capable ਹਾਂ।",
 
-      danish: "[gentle] Du kan lytte til denne historie på urdu, engelsk, punjabi eller dansk. [thoughtful] Vælg venligst dit sprog. [PAUSE_FOR_LANGUAGE_SELECTION] [calm] Papa, jeg har brug for at du stoler på mig. [firm] Min ADHD er ægte. Men når du giver mig værktøjer, ikke kontrol... lykkes jeg. [frustrated] Vores problem er dette: når vi er uenige om HVORDAN... sker der ingenting. [sad] Tyve tyve: Jeg ville have en lejlighed, du sagde hus. Intet skete. Nu: Jeg vil genopbygge kredit, du vil give mig en Civic. [determined] Jeg vil ikke have en gave. Jeg vil have værktøjer. Hjælp mig med at genopbygge kredit gennem finansiering jeg betaler for. Lejlighed udbetaling, jeg betaler realkreditlån. [pleading] Stol på at jeg gør tingene på min måde. [gentle] Dette er min historie... for at bevise jeg er i stand til det."
+      danish: "[gentle] Du kan lytte til denne historie på urdu, engelsk, punjabi eller dansk. [thoughtful] Vælg venligst dit sprog. [PAUSE_FOR_LANGUAGE_SELECTION] [calm] Papa, jeg har brug for at du stoler på mig. [firm] Min ADHD er ægte. Uden tvivl. Men når du giver mig værktøjer, ikke kontrol... når miljøet er rigtigt... lykkes jeg. [frustrated] Vores problem er dette: når vi er uenige om HVORDAN... sker der ingenting. [intense] Tyve tyve: Jeg tjente ti tusind dollars om ugen. Jeg ville have en lejlighed. Du sagde hus. Vi var uenige. [sad] Intet skete. Muligheden døde. [regretful] Tyve to og tyve fem: Jeg lavede leje-fejl. Men jeg lærte... jeg skal opbygge egenkapital. [determined] Nu: Jeg vil genopbygge kredit, du vil give mig en Civic. Jeg vil ikke have en gave. Jeg vil have værktøjer. Hjælp mig med at finansiere noget jeg selv betaler for. Lejlighed udbetaling, jeg betaler realkreditlån. [pleading] Stol på at jeg gør tingene på min måde. Eller... lad os finde forståelse. Sammen. [gentle] Dette er min historie... for at bevise jeg er i stand til det."
     },
     textLines: [
       {
@@ -26,24 +26,24 @@ export const act1Scenes: SceneData[] = [
         danish: "Papa, stol på mig."
       },
       {
-        urdu: "Tools دو، control نہیں۔",
-        english: "Give tools, not control.",
-        punjabi: "Tools ਦਿਓ, control ਨਹੀਂ।",
-        danish: "Giv værktøjer, ikke kontrol.",
+        urdu: "ADHD حقیقی ہے۔ صحیح environment = کامیابی",
+        english: "ADHD is real. Right environment = Success",
+        punjabi: "ADHD ਅਸਲੀ ਹੈ। ਸਹੀ environment = ਕਾਮਯਾਬੀ",
+        danish: "ADHD er ægte. Rigtigt miljø = Succes",
         delay: 400
       },
       {
-        urdu: "Disagree = کچھ نہیں ہوتا۔",
-        english: "Disagree = Nothing happens.",
-        punjabi: "Disagree = ਕੁਝ ਨਹੀਂ ਹੁੰਦਾ।",
-        danish: "Uenighed = Intet sker.",
+        urdu: "2020: $10k/ہفتہ، disagree = کوئی condo نہیں",
+        english: "2020: $10k/week, disagree = No condo",
+        punjabi: "2020: $10k/ਹਫ਼ਤਾ, disagree = ਕੋਈ condo ਨਹੀਂ",
+        danish: "2020: $10k/uge, uenighed = Ingen lejlighed",
         delay: 800
       },
       {
-        urdu: "یہ proof ہے۔",
-        english: "This is proof.",
-        punjabi: "ਇਹ proof ਹੈ।",
-        danish: "Dette er bevis.",
+        urdu: "Tools دو، تب ہم understanding تلاش کریں۔",
+        english: "Give tools, then find understanding.",
+        punjabi: "Tools ਦਿਓ, ਫਿਰ understanding ਲੱਭੀਏ।",
+        danish: "Giv værktøjer, find forståelse.",
         delay: 1200
       },
     ],

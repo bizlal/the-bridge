@@ -8,11 +8,13 @@
 
 import { motion, AnimatePresence } from 'framer-motion';
 import { Language } from '@/lib/types';
+import { isAudioAvailable } from '@/lib/audioAvailability';
 
 interface LanguageSelectorProps {
   currentLanguage: Language;
   onLanguageSelect: (language: Language) => void;
   isVisible: boolean;
+  currentSceneId?: number;
 }
 
 const LANGUAGE_OPTIONS = [
@@ -25,7 +27,8 @@ const LANGUAGE_OPTIONS = [
 export function LanguageSelector({
   currentLanguage,
   onLanguageSelect,
-  isVisible
+  isVisible,
+  currentSceneId = 0
 }: LanguageSelectorProps) {
   return (
     <AnimatePresence>
@@ -52,48 +55,61 @@ export function LanguageSelector({
 
             {/* Language Options */}
             <div className="space-y-3">
-              {LANGUAGE_OPTIONS.map((option) => (
-                <motion.button
-                  key={option.code}
-                  onClick={() => onLanguageSelect(option.code)}
-                  whileHover={{ scale: 1.02 }}
-                  whileTap={{ scale: 0.98 }}
-                  className={`
-                    w-full p-4 rounded-xl border-2 transition-all duration-200
-                    ${
-                      currentLanguage === option.code
-                        ? 'border-blue-500 bg-blue-500/20 shadow-lg shadow-blue-500/20'
-                        : 'border-gray-700 bg-gray-800/50 hover:border-gray-600 hover:bg-gray-800'
-                    }
-                  `}
-                >
+              {LANGUAGE_OPTIONS.map((option) => {
+                const available = isAudioAvailable(currentSceneId, option.code);
+
+                return (
+                  <motion.button
+                    key={option.code}
+                    onClick={() => available && onLanguageSelect(option.code)}
+                    whileHover={available ? { scale: 1.02 } : {}}
+                    whileTap={available ? { scale: 0.98 } : {}}
+                    disabled={!available}
+                    className={`
+                      w-full p-4 rounded-xl border-2 transition-all duration-200
+                      ${
+                        currentLanguage === option.code
+                          ? 'border-blue-500 bg-blue-500/20 shadow-lg shadow-blue-500/20'
+                          : available
+                            ? 'border-gray-700 bg-gray-800/50 hover:border-gray-600 hover:bg-gray-800'
+                            : 'border-gray-800 bg-gray-900/30 opacity-50 cursor-not-allowed'
+                      }
+                    `}
+                  >
                   <div className="flex items-center justify-between">
                     <div className="flex items-center gap-3">
                       {/* Language Icon/Indicator */}
-                      <div
-                        className={`
-                          w-3 h-3 rounded-full transition-all
-                          ${
-                            currentLanguage === option.code
-                              ? 'bg-blue-500 shadow-lg shadow-blue-500/50'
-                              : 'bg-gray-600'
-                          }
-                        `}
-                      />
+                      {!available ? (
+                        <svg className="w-4 h-4 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                        </svg>
+                      ) : (
+                        <div
+                          className={`
+                            w-3 h-3 rounded-full transition-all
+                            ${
+                              currentLanguage === option.code
+                                ? 'bg-blue-500 shadow-lg shadow-blue-500/50'
+                                : 'bg-gray-600'
+                            }
+                          `}
+                        />
+                      )}
 
                       {/* Language Labels */}
                       <div className="text-left">
-                        <div className="text-lg font-semibold text-white">
+                        <div className={`text-lg font-semibold ${available ? 'text-white' : 'text-gray-600'}`}>
                           {option.label}
                         </div>
-                        <div className="text-sm text-gray-400">
+                        <div className={`text-sm ${available ? 'text-gray-400' : 'text-gray-700'}`}>
                           {option.nativeLabel}
+                          {!available && ' (Audio pending)'}
                         </div>
                       </div>
                     </div>
 
                     {/* Selected Indicator */}
-                    {currentLanguage === option.code && (
+                    {currentLanguage === option.code && available && (
                       <motion.div
                         initial={{ scale: 0 }}
                         animate={{ scale: 1 }}
@@ -116,7 +132,8 @@ export function LanguageSelector({
                     )}
                   </div>
                 </motion.button>
-              ))}
+              );
+              })}
             </div>
 
             {/* Helper Text */}

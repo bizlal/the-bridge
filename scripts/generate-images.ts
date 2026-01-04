@@ -128,7 +128,7 @@ const IMAGE_PROMPT_SUFFIXES: Record<number, string> = {
 
   27: `MOOD: Limelight peak, App Store #4. COMPOSITION: App Store ranking visualization (numbers abstract blur), peak achievement atmosphere, #4 ranking glow, success peak, app store charts, achievement zenith.`,
 
-  28: `MOOD: Trackem to BK DevOps, technical pivot. COMPOSITION: DevOps infrastructure blur (server racks abstract), technical pivot visualization, Burger King corporate atmosphere, employment shift, stability seeking.`,
+  28: `DevOps engineering workspace, technical infrastructure, server monitoring screens, code deployment, software development environment, technical career pivot, professional growth. No detailed faces, silhouettes only.`,
 
   29: `MOOD: Toronto move, geographical shift. COMPOSITION: Toronto skyline blur (CN Tower silhouette), relocation visualization, geographical shift atmosphere, Canadian border, new chapter fog, city transition.`,
 
@@ -136,7 +136,7 @@ const IMAGE_PROMPT_SUFFIXES: Record<number, string> = {
 
   31: `MOOD: Offer rejected, walking away from security. COMPOSITION: Job offer letter blur (salary numbers abstract), rejection decision visualization, security refused atmosphere, walking away fog, independence chosen, risk accepted.`,
 
-  32: `MOOD: AC jump start, return to entrepreneurship. COMPOSITION: Air conditioning startup visualization (AC unit texture blur), business restart atmosphere, entrepreneurship return fog, new venture, fresh start.`,
+  32: `Arrow Capital business venture, entrepreneurship return, new startup beginning, office workspace, laptop and documents, business planning, fresh start atmosphere, hopeful determination. No detailed faces, silhouettes only.`,
 
   33: `MOOD: The downgrade, moving back home. COMPOSITION: Moving boxes texture blur, downgrade visualization, regression atmosphere, childhood home return fog, independence lost, backward movement.`,
 

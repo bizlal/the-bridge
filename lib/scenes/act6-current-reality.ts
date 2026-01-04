@@ -552,55 +552,6 @@ export const act6Scenes: SceneData[] = [
     timePeriod: '2024'
   },
 
-  // Scene 38: THE BRIDGE,
-
-  {
-    id: 38,
-    title: "THE BRIDGE",
-    audioScripts: {
-      urdu: "[thoughtful] پابا، یہ bridge ہے۔ [gentle] وہ bridge جو آپ نے بنائی۔ Pakistan سے یہاں تک۔ [emotional] آپ نے سب کچھ چھوڑ دیا۔ ایک بہتر زندگی کے لیے۔ میرے لیے۔ [grateful] اور میں نے تقریباً... تقریباً اسے برباد کر دیا۔ [hopeful] لیکن آپ کی bridge مجھے پکڑے رہی۔",
-
-      english: "[thoughtful] Papa, this is the bridge. [gentle] The bridge you built. From Pakistan to here. [emotional] You left everything. For a better life. For me. [grateful] And I almost... I almost destroyed it. [hopeful] But your bridge held me.",
-
-      punjabi: "[thoughtful] ਪਾਪਾ, ਇਹ bridge ਹੈ। [gentle] ਉਹ bridge ਜੋ ਤੁਸੀਂ ਬਣਾਈ। Pakistan ਤੋਂ ਇੱਥੇ ਤੱਕ। [emotional] ਤੁਸੀਂ ਸਭ ਕੁਝ ਛੱਡ ਦਿੱਤਾ। ਇੱਕ ਬਿਹਤਰ ਜ਼ਿੰਦਗੀ ਲਈ। ਮੇਰੇ ਲਈ। [grateful] ਅਤੇ ਮੈਂ ਲਗਭਗ... ਲਗਭਗ ਇਸਨੂੰ ਬਰਬਾਦ ਕਰ ਦਿੱਤਾ। [hopeful] ਪਰ ਤੁਹਾਡੀ bridge ਨੇ ਮੈਨੂੰ ਫੜੀ ਰੱਖਿਆ।",
-
-      danish: "[thoughtful] Papa, det er broen. [gentle] Broen du byggede. Fra Pakistan til her. [emotional] Du forlod alt. For et bedre liv. For mig. [grateful] Og jeg næsten... jeg næsten ødelagde den. [hopeful] Men din bro holdt mig."
-    },
-    textLines: [
-      {
-        urdu: "یہ bridge ہے۔",
-        english: "This is the bridge.",
-        punjabi: "ਇਹ bridge ਹੈ।",
-        danish: "Det er broen."
-      },
-      {
-        urdu: "آپ نے بنائی۔ مجھے لیے۔",
-        english: "You built it. For me.",
-        punjabi: "ਤੁਸੀਂ ਬਣਾਈ। ਮੇਰੇ ਲਈ।",
-        danish: "Du byggede den. For mig.",
-        delay: 400
-      },
-      {
-        urdu: "میں نے تقریباً برباد کر دیا۔",
-        english: "I almost destroyed it.",
-        punjabi: "ਮੈਂ ਲਗਭਗ ਬਰਬਾਦ ਕੀਤਾ।",
-        danish: "Jeg næsten ødelagde den.",
-        delay: 800
-      },
-      {
-        urdu: "لیکن یہ مجھے پکڑے رہی۔",
-        english: "But it held me.",
-        punjabi: "ਪਰ ਇਸਨੇ ਮੈਨੂੰ ਫੜਿਆ।",
-        danish: "Men den holdt mig.",
-        delay: 1200
-      },
-    ],
-    visualStyle: 'dramatic',
-    backgroundImage: '/images/scene-38-the-bridge.jpg',
-    textOverlay: 'THE BRIDGE',
-    timePeriod: 'PAST TO PRESENT'
-  },
-
   // Scene 39: THE HOUSE PARADOX
   {
     id: 39,

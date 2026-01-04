@@ -63,9 +63,15 @@ export default function AudioPool({ language, onReady }: AudioPoolProps) {
       // Fallback to legacy naming if new naming fails (backward compatibility)
       audio.addEventListener('error', () => {
         const legacyPath = getLegacyAudioPath(scene, language);
-        if (audio.src !== legacyPath) {
-          console.log(`Falling back to legacy path for scene ${scene.id}: ${legacyPath}`);
+        const currentPath = new URL(audio.src).pathname;
+        const legacyFilename = legacyPath.split('/').pop();
+
+        if (!currentPath.endsWith(legacyFilename || '')) {
+          console.log(`⚠️ Audio failed: ${currentPath}, trying legacy: ${legacyPath}`);
           audio.src = legacyPath;
+        } else {
+          console.error(`❌ Audio missing for Scene ${scene.id} (${language}): ${legacyPath}`);
+          console.error(`   Run: npm run generate-audio -- --scene=${scene.id} --language=${language}`);
         }
       });
 

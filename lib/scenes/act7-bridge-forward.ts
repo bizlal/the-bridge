@@ -8,54 +8,6 @@ import { SceneData } from '../types';
  */
 
 export const act7Scenes: SceneData[] = [
-  // Scene 40: THE PATTERN (The Environmental Data)
-  {
-    id: 40,
-    title: "THE PATTERN",
-    audioScripts: {
-      urdu: "[analytical] میں نے ڈیٹا دیکھا ہے۔ [clear] جب میں اکیلا تھا... میں نے ٹریکم میں $1M بچایا۔ میں نے لائم لائٹ بنائی۔ میں نے ہفتے میں $10,000 کمائے۔ [dark] جب میں گھر واپس آیا... میں نے جوا کھیلا۔ میں نے میتھ (meth) استعمال کیا۔ [realization] یہ میری اخلاقی ناکامی نہیں ہے۔ یہ ماحول کا ردعمل ہے۔ [determined] جب میں یہاں ہوتا ہوں... میں سکڑ جاتا ہوں۔ جب میں باہر ہوتا ہوں... میں تعمیر کرتا ہوں۔",
-
-      english: "[analytical] I looked at the data. [clear] When I was independent... I saved Trackem $1M. I built Limelight. I made $10,000 a week. [dark] When I moved back home... I gambled. I used meth. [realization] This isn't a moral failure. It is an environmental reaction. [determined] When I am here... I shrink. When I am out... I build.",
-
-      punjabi: "[analytical] ਮੈਂ ਡੇਟਾ ਦੇਖਿਆ ਹੈ। [clear] ਜਦੋਂ ਮੈਂ ਸੁਤੰਤਰ ਸੀ... ਮੈਂ Trackem ਦਾ $1M ਬਚਾਇਆ। ਮੈਂ Limelight ਬਣਾਈ। ਮੈਂ ਹਫ਼ਤੇ ਦੇ $10,000 ਕਮਾਏ। [dark] ਜਦੋਂ ਮੈਂ ਘਰ ਵਾਪਸ ਆਇਆ... ਮੈਂ ਜੂਆ ਖੇਡਿਆ। ਮੈਂ ਨਸ਼ਾ ਕੀਤਾ। [realization] ਇਹ ਮੇਰੀ ਨੈਤਿਕ ਹਾਰ ਨਹੀਂ ਹੈ। ਇਹ ਮਾਹੌਲ ਦਾ ਅਸਰ ਹੈ। [determined] ਜਦੋਂ ਮੈਂ ਇੱਥੇ ਹੁੰਦਾ ਹਾਂ... ਮੈਂ ਸੁੰਗੜ ਜਾਂਦਾ ਹਾਂ। ਜਦੋਂ ਮੈਂ ਬਾਹਰ ਹੁੰਦਾ ਹਾਂ... ਮੈਂ ਉਸਾਰਦਾ ਹਾਂ।",
-
-      danish: "[analytical] Jeg kiggede på dataene. [clear] Da jeg var uafhængig... sparede jeg Trackem for $1M. Jeg byggede Limelight. Jeg tjente $10.000 om ugen. [dark] Da jeg flyttede hjem... gamblede jeg. Jeg tog stoffer. [realization] Dette er ikke en moralsk fiasko. Det er en miljøreaktion. [determined] Når jeg er her... krymper jeg. Når jeg er ude... bygger jeg."
-    },
-    textLines: [
-      {
-        urdu: "آزاد = $10k/ہفتہ + کوئی جوا نہیں",
-        english: "Independent = $10k/week + No Gambling",
-        punjabi: "ਆਜ਼ਾਦ = $10k/ਹਫ਼ਤੇ + ਕੋਈ ਜੂਆ ਨਹੀਂ",
-        danish: "Uafhængig = $10k/uge + Ingen spil"
-      },
-      {
-        urdu: "گھر = جوا + ٹوٹ پھوٹ",
-        english: "Home = Gambling + Collapse",
-        punjabi: "ਘਰ = ਜੂਆ + ਟੁੱਟ ਭੱਜ",
-        danish: "Hjem = Spil + Kollaps",
-        delay: 400
-      },
-      {
-        urdu: "ماحول ہی متغیر (variable) ہے۔",
-        english: "The environment is the variable.",
-        punjabi: "ਮਾਹੌਲ ਹੀ variable ਹੈ।",
-        danish: "Miljøet er variablen.",
-        delay: 800
-      },
-      {
-        urdu: "میں یہاں بڑھ نہیں سکتا۔",
-        english: "I cannot grow here.",
-        punjabi: "ਮੈਂ ਇੱਥੇ ਵਧ ਨਹੀਂ ਸਕਦਾ।",
-        danish: "Jeg kan ikke vokse her.",
-        delay: 1200
-      },
-    ],
-    visualStyle: 'dark',
-    backgroundImage: '/images/scene-40-the-pattern.jpg',
-    textOverlay: 'THE DATA',
-    timePeriod: '2015-2025'
-  },
-
   // Scene 41: THE DISCONNECT (Taxi vs Empire)
   {
     id: 41,
