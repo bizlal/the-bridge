@@ -248,7 +248,15 @@ export const act1Scenes: SceneData[] = [
     visualStyle: 'bright',
     backgroundImage: '/images/scene-03-newspaper.jpg',
     textOverlay: 'THE HAMILTON SPECTATOR',
-    timePeriod: 'JULY 2, 2011'
+    timePeriod: 'JULY 2, 2011',
+    gallery: [
+      {
+        type: 'document',
+        url: '/images/evidence/hamilton-spectator-jailbreak-2011.jpg',
+        caption: 'Hamilton Spectator article featuring 14-year-old Bilal Khalid as tech expert (July 2, 2011)',
+        alt: 'Hamilton Spectator newspaper article about iPhone jailbreaking featuring Bilal Khalid'
+      }
+    ]
   },
 
   {

@@ -288,7 +288,8 @@ async function generateSceneImage(scene: SceneData, force = false, styleKey?: St
     } else {
       console.error(`❌ Unexpected error for Scene ${scene.id}:`, error);
     }
-    throw error;
+    // Don't throw - continue with next scene
+    console.log(`⏭️  Skipping Scene ${scene.id} and continuing...\n`);
   }
 }
 

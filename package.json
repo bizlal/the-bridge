@@ -13,6 +13,8 @@
     "generate-images": "tsx scripts/generate-images.ts",
     "generate-images:force": "tsx scripts/generate-images.ts --force",
     "generate-images:scene": "tsx scripts/generate-images.ts --scene=",
+    "check-audio": "tsx scripts/check-missing-audio.ts",
+    "create-legacy-audio": "tsx scripts/create-legacy-audio-links.ts",
     "copy-english": "cat lib/scenes/act*.ts | grep -A 200 'english:' | grep -v 'urdu:\\|punjabi:\\|danish:\\|textLines\\|id:\\|title:\\|visualStyle:\\|backgroundImage:\\|textOverlay:\\|timePeriod:\\|voiceId:' | sed 's/english: \"//' | sed 's/\",$//' | sed 's/^[[:space:]]*//' | grep -v '^}$\\|^{$\\|^--$' | pbcopy && echo '✅ All English audio scripts copied to clipboard!'"
   },
   "dependencies": {

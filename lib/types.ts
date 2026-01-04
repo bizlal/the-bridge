@@ -8,6 +8,18 @@ export type Language = 'en' | 'ur' | 'pa' | 'da'; // en=English, ur=Urdu, pa=Pun
 // Map short language codes to full language names used in SceneData
 export type LanguageFull = 'english' | 'urdu' | 'punjabi' | 'danish';
 
+// Media types for evidence-based storytelling
+export type MediaType = 'image' | 'video' | 'document' | 'screenshot';
+
+export interface MediaItem {
+  type: MediaType;
+  url: string;
+  caption?: string;
+  alt?: string;
+  thumbnailUrl?: string; // For videos
+  timestamp?: number; // When to show during audio playback (optional, in seconds)
+}
+
 export function toFullLanguageName(lang: Language): LanguageFull {
   const map: Record<Language, LanguageFull> = {
     'en': 'english',
@@ -44,6 +56,8 @@ export interface SceneData {
   textOverlay?: string;
   timePeriod?: string;
   voiceId?: VoiceKey;  // Optional voice override (defaults to 'liam')
+  media?: MediaItem[];  // Support for inline media during scene playback
+  gallery?: MediaItem[]; // Separate evidence gallery (photos, videos, documents)
 }
 
 // Component prop types

@@ -10,6 +10,7 @@ import { useRef, useEffect } from 'react';
 import { SceneData, LanguageFull } from '@/lib/types';
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
 import { BackgroundLayer } from './BackgroundLayer';
+import { MediaGallery } from './MediaGallery';
 
 interface ScrollSceneProps {
   sceneData: SceneData;
@@ -91,6 +92,23 @@ export default function ScrollScene({ sceneData, sceneIndex, language }: ScrollS
             );
           })}
         </div>
+
+        {/* Evidence Gallery - Photos, Videos, Documents */}
+        {sceneData.gallery && sceneData.gallery.length > 0 && (
+          <div className="mt-12 max-w-6xl w-full">
+            <h3 className="text-2xl md:text-3xl font-bold text-white mb-6 text-center">
+              Evidence
+            </h3>
+            <MediaGallery media={sceneData.gallery} />
+          </div>
+        )}
+
+        {/* Inline Media - Timestamped to audio */}
+        {sceneData.media && sceneData.media.length > 0 && (
+          <div className="mt-8 max-w-4xl w-full">
+            <MediaGallery media={sceneData.media} className="grid-cols-1" />
+          </div>
+        )}
       </div>
 
       {/* Screen Reader - Scene Information */}
